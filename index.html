@@ -1,87 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Valentine ❤️</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
 <div id="main-wrapper">
+  <div id="heart-bg"></div>
 
-<section id="hero-section">
-  <div class="calendar-mini">
-    <div class="cal-top">FEB</div>
-    <div class="cal-body">14</div>
-  </div>
-
-  <div class="xoxo-decor x-home">XOXO</div>
-
-  <div class="card premium-border">
-    <div class="corner-ribbon">Special</div>
-
-    <img src="https://media.tenor.com/2csFlkJ3TyAAAAAi/tkthao219-bubududu.gif" class="gif-sm">
-
-    <h1>Will you be my Valentine... again? ❤️</h1>
-    <p>Official invite from your long-distance boyfriend ✨</p>
-
-    <div class="button-group">
-      <button id="yes-btn">YES! 💖</button>
-      <button id="no-btn">No 🥺</button>
+  <section id="hero-section" class="page-fade">
+    <div class="calendar-mini">
+      <div class="cal-top">FEB</div>
+      <div class="cal-body">14</div>
     </div>
-  </div>
-</section>
+    <div class="xoxo-decor x-home">XOXO</div>
 
-<section id="story-section" style="display:none">
+    <div class="card main-card premium-border">
+      <div class="corner-ribbon"><span>Special</span></div>
+      <img src="https://media.tenor.com/2csFlkJ3TyAAAAAi/tkthao219-bubududu.gif" alt="Bubu Panda" class="gif-sm">
+      <h1>Will you be my Valentine... again? ❤️</h1>
+      <p class="sparkle-text">Official invite from your long-distance boyfriend ✨</p>
 
-  <div class="xoxo-decor x-home">XOXO</div>
-
-  <div class="card">
-    <h2>Good choice, Bangaram! 😍</h2>
-    <img src="https://media.tenor.com/3k-c5AIyPtwAAAAi/love-heart.gif" class="gif-sm">
-    <p>Now you're stuck with me forever... ♾️</p>
-  </div>
-
-  <div class="card wide-card">
-    <h3>Our Virtual Date Ideas 📱</h3>
-    <ul class="date-list">
-      <li class="pill">🎬 Netflix party + video call</li>
-      <li class="pill">🍕 Order the same food together</li>
-      <li class="pill">🌙 Late night talks</li>
-      <li class="pill">💋 Virtual kiss and romance</li>
-      <li class="pill">🤳 Send me your selfies 🤩</li>
-      <li class="pill">📞 Video call the whole day</li>
-    </ul>
-  </div>
-
-  <div class="card wide-card">
-    <h3>A Note For Monika ❤️</h3>
-
-    <div class="envelope-wrapper" onclick="toggleEnvelope()">
-      <div class="envelope" id="envelope">
-        <div class="flap"></div>
-        <div class="body"></div>
-        <div class="letter">
-          <div class="letter-text">
-            You are my favorite notification,<br>
-            my favorite voice,<br>
-            my favorite everything ❤️
-          </div>
+      <div class="button-group">
+        <button id="yes-btn">YES! 💖</button>
+        <div id="no-anchor">
+          <button id="no-btn">No 🥺</button>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <p class="footer-centered">Made with love for Monika ❤️</p>
+  <section id="story-section" style="display: none;">
+    <div class="story-content">
+      <div class="xoxo-decor x-story">XOXO</div>
 
-</section>
+      <div class="card fluid-zoom animate-reveal" style="--delay: 0.2s">
+        <h2>Good choice, Bangaram! 😍</h2>
+        <img src="https://media.tenor.com/3k-c5AIyPtwAAAAi/love-heart.gif" class="gif-sm">
+        <p>Now you're stuck with me forever... ♾️</p>
+      </div>
 
+      <div class="card wide-card fluid-zoom animate-reveal" style="--delay: 0.4s">
+        <h3 class="section-header">Our Virtual Date Ideas 📱</h3>
+        <ul class="date-list">
+          <li class="pill"><span>🎬</span> Netflix party + video call</li>
+          <li class="pill"><span>🍕</span> Order the same food together</li>
+          <li class="pill"><span>🌙</span> Late night talks</li>
+          <li class="pill"><span>💋</span> Virtual kiss and romance</li>
+          <li class="pill"><span>🤳</span> Send me your selfies 🤩</li>
+          <li class="pill"><span>📞</span> Video call the whole day</li>
+        </ul>
+      </div>
+
+      <div class="card wide-card fluid-zoom animate-reveal" style="--delay: 0.6s">
+        <h3 class="section-header">A Note For Monika ❤️</h3>
+        <div class="envelope-wrapper" onclick="toggleEnvelope()">
+          <div class="envelope" id="envelope">
+            <div class="flap"></div>
+            <div class="body"></div>
+            <div class="letter">
+              <div class="letter-text">
+                You are my favorite notification,<br>
+                my favorite voice,<br>
+                my favorite everything. ❤️
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-centered animate-reveal" style="--delay: 0.8s">Made with love for Monika ❤️</p>
+    </div>
+  </section>
 </div>
-
-<script src="script.js"></script>
-</body>
-</html>
